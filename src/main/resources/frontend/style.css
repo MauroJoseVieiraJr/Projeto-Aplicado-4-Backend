@@ -157,4 +157,9 @@ label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
 }
+.caixalogin {
+    display: flex;
+    justify-content: space-around;
+
+}
 
