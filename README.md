@@ -28,39 +28,27 @@ Foram aproveitadas partes do projeto do curso de Desenvolvimento de Sites.</p>
 <ul>
 	<li>Projeto inicial gerado com a ferramenta Spring Initializr</li>
 	<ul><li>https://start.spring.io/</li></ul>
-	
 	<li>Java 20.0.1</li>
 	<ul><li>https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html</li></ul>
-	
 	<li>PostgreSQL 15.2 (versão acessada em 2023-11-19 é a 15.5)</li>
 	<ul><li>https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</li></ul>
-	
 	<li><strong>Vídeos tutoriais do professor Julio Cezar Rutke na plataforma AVA Sesi/Senai</strong></li>
-	
 	<li>Criando Aplicação Fullstack do Zero com Java Spring e React - Parte 1: Desenvolvimento do Backend</li>
 	<ul><li>https://www.youtube.com/watch?v=lUVureR5GqI</li></ul>
-	
 	<li>Projeto Web API Java Spring Boot - 2 (Front-end HTML/CSS)</li>
 	<ul><li>https://www.youtube.com/watch?v=Vhc1oAYXqTk</li></ul>
-	
 	<li>Projeto Web API Java Spring Boot - 3 ( Front-end JavaScript)</li>
 	<ul><li>https://www.youtube.com/watch?v=JOzFVnMzcXI</li></ul>
-	
 	<li>Projeto Web API Java Spring Boot - 5 (Model e DAO)</li>
 	<ul><li>https://www.youtube.com/watch?v=a_yxI-stMsM</li></ul>
-	
 	<li>Projeto Web API Java Spring Boot - 6 (Endpoints)</li>
 	<ul><li>https://www.youtube.com/watch?v=ga3Fj47hBLU</li></ul>
-	
 	<li>Projeto Web API Java Spring Boot - 7 (Conectando Front/Back)</li>
 	<ul><li>https://www.youtube.com/watch?v=hsewph3Xphw</li></ul>
-	
 	<li>innerHTML with For Loop in Javascript</li>
 	<ul><li>https://stackoverflow.com/questions/12996763/innerhtml-with-for-loop-in-javascript</li></ul>
-	
 	<li>JavaScript | How to Fetch Data from an API</li>
 	<ul><li>https://www.youtube.com/watch?v=zOrejGF0oBA</li></ul>
-	
 	<li>REST API design - optional request parameters</li>
 	<ul><li>https://stackoverflow.com/questions/61033474/rest-api-design-optional-request-parameters</li></ul>
 </ul>
