@@ -27,40 +27,40 @@ Foram aproveitadas partes do projeto do curso de Desenvolvimento de Sites.</p>
 <h2>Bibliografia</h2>
 <ul>
 	<li>Projeto inicial gerado com a ferramenta Spring Initializr</li>
-	<p>https://start.spring.io/</p>
+	https://start.spring.io/
 	
 	<li>Java 20.0.1</li>
-	<p>https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html</p>
+	https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html
 	
 	<li>PostgreSQL 15.2 (versão acessada em 2023-11-19 é a 15.5)</li>
-	<p>https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</p>
+	https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 	
 	<li><strong>Vídeos tutoriais do professor Julio Cezar Rutke na plataforma AVA Sesi/Senai</strong></li>
 	
 	<li>Criando Aplicação Fullstack do Zero com Java Spring e React - Parte 1: Desenvolvimento do Backend</li>
-	<p>https://www.youtube.com/watch?v=lUVureR5GqI</p>
+	https://www.youtube.com/watch?v=lUVureR5GqI
 	
 	<li>Projeto Web API Java Spring Boot - 2 (Front-end HTML/CSS)</li>
-	<p>https://www.youtube.com/watch?v=Vhc1oAYXqTk</p>
+	https://www.youtube.com/watch?v=Vhc1oAYXqTk
 	
 	<li>Projeto Web API Java Spring Boot - 3 ( Front-end JavaScript)</li>
-	<p>https://www.youtube.com/watch?v=JOzFVnMzcXI</p>
+	https://www.youtube.com/watch?v=JOzFVnMzcXI
 	
 	<li>Projeto Web API Java Spring Boot - 5 (Model e DAO)</li>
-	<p>https://www.youtube.com/watch?v=a_yxI-stMsM</p>
+	https://www.youtube.com/watch?v=a_yxI-stMsM
 	
 	<li>Projeto Web API Java Spring Boot - 6 (Endpoints)</li>
-	<p>https://www.youtube.com/watch?v=ga3Fj47hBLU</p>
+	https://www.youtube.com/watch?v=ga3Fj47hBLU
 	
 	<li>Projeto Web API Java Spring Boot - 7 (Conectando Front/Back)</li>
-	<p>https://www.youtube.com/watch?v=hsewph3Xphw
+	https://www.youtube.com/watch?v=hsewph3Xphw
 	
 	<li>innerHTML with For Loop in Javascript</li>
-	<p>https://stackoverflow.com/questions/12996763/innerhtml-with-for-loop-in-javascript</p>
+	https://stackoverflow.com/questions/12996763/innerhtml-with-for-loop-in-javascript
 	
 	<li>JavaScript | How to Fetch Data from an API</li>
-	<p>https://www.youtube.com/watch?v=zOrejGF0oBA</p>
+	https://www.youtube.com/watch?v=zOrejGF0oBA
 	
 	<li>REST API design - optional request parameters</li>
-	<p>https://stackoverflow.com/questions/61033474/rest-api-design-optional-request-parameters</p>
+	https://stackoverflow.com/questions/61033474/rest-api-design-optional-request-parameters
 </ul>
