@@ -1,6 +1,8 @@
 <h1>Projeto Aplicado 3</h1>
-<p>Projeto criado ao longo do terceiro semeste do curso Análise e Desenvolvimento de Sistemas do Senai/SC.
-Foram aproveitadas partes do projeto do curso de Desenvolvimento de Sites.</p>
+<p>Banco de dados com cadastro de vagas de emprego e candidatos, com o foco em pessoas com deficiência.
+É possível criar, ler, alterar e deletar registros realizados em conformidade com o padrão CRUD.</p>
+<p>Projeto foi criado ao longo do quarto semeste do curso Análise e Desenvolvimento de Sistemas do Senai/SC.
+Foram aproveitadas partes do backend <a href="https://github.com/MauroJoseVieiraJr/Projeto-Final" target="_blank">Projeto Aplicado 2</a> do semestre anterior.</p>
 
 <h2>Autores</h2>
 <ul>
@@ -10,9 +12,10 @@ Foram aproveitadas partes do projeto do curso de Desenvolvimento de Sites.</p>
 </ul>
 
 <h2>Pré-requisitos</h2>
-<p>Para rodar este projeto é necessário ter o Java versão 20.0.1 (2023-04-18) e PostgreSQL 15.2 build 1914 ou versões mais recentes instaladas em sua máquina.</p>
+<p>Para rodar este projeto é necessário ter o Java versão 20.0.1 (2023-04-18), PostgreSQL 15.2 build 1914 e Spring Boot 3.2.0 ou versões mais recentes instaladas em sua máquina.</p>
 <p>Caso utilize a IDE Eclipse EE importe o projeto após clonar este repositório para poder editá-lo.</p>
 <p>Não se esqueça de ir no arquivo application.properties e alterar a porta de 5433 para 5432 caso tenha recém instalado o PostgreSQL.</p>
+<p><strong>A modelagem do banco de dados está em "/src/main/resources/Modelagem do Banco de Dados (PostgreSQL).txt"</strong></p>
 <p>Para testar os endpoints do backend foi utilizado o software Insomnia (https://insomnia.rest/download)</p>
 
 <h2>Dependências</h2>
