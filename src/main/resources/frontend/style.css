@@ -1,17 +1,15 @@
 header{
-    background-color: rgb(21, 160, 179)55, 255, 255);
+    background-color: rgb(21, 160, 179);
     text-align: center;
     width: 100%;
     margin: auto;
-    border: 10px solid rgb(116, 116, 173)
+    border: 10px solid rgb(116, 116, 173);
     padding: 5px; 
 }
 body, html {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-
-  
 }
 .cadeirante{
     width: 30%; /* Ajusta a largura da imagem para 100% do elemento pai */
@@ -31,7 +29,6 @@ main{
 
 }
 .menu a {
-    
     background-color: rgb(12, 106, 138);
     padding: 20px;
     text-decoration: none;
@@ -65,7 +62,6 @@ h1{
 h2{
     color:rgb(12, 106, 138);
     text-align: center;
-
 }
 
 h3{
@@ -78,7 +74,6 @@ h3{
   padding: 90px; /* Adiciona espaçamento interno ao container */
   text-align: left;
   background-color: #ffffff; /* Cor de fundo do container (apenas para visualização) */
-
 }
 footer{
   font-size;
@@ -106,7 +101,6 @@ footer{
     margin: 0; /* Remove margens dos parágrafos para melhor alinhamento */
     margin-bottom: 8px;
     margin-right: 50px;
-
   }
   .links{
     display: flex;
@@ -156,7 +150,6 @@ footer{
     flex: 0 0 calc(33.33% - 20px); /* Define cada campo para ocupar 33.33% da largura, com um pouco de margem */
     margin-right: 20px; /* Espaçamento entre os campos */
     margin-bottom: 20px; /* Espaçamento entre as linhas */
-    border-style: ;
 }
 
 .linha:last-child {

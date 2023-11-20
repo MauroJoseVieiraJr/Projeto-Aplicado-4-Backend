@@ -1,14 +1,15 @@
 <h1>Projeto Aplicado 3</h1>
-<p>Banco de dados com cadastro de vagas de emprego e candidatos, com o foco em pessoas com deficiência.
+<p>Banco de dados com cadastro de pessoas com deficiência.
 É possível criar, ler, alterar e deletar registros realizados em conformidade com o padrão CRUD.</p>
 <p>Projeto foi criado ao longo do quarto semeste do curso Análise e Desenvolvimento de Sistemas do Senai/SC.
 Foram aproveitadas partes do backend <a href="https://github.com/MauroJoseVieiraJr/Projeto-Final" target="_blank">Projeto Aplicado 2</a> do semestre anterior.</p>
+Front-end foi desenvolvido por Filipe de Freitas (<a href="https://github.com/Filipedefreitas/Projeto-SENAI-HTML-4--Semestre" target="_blank">link</a>)
 
 <h2>Autores</h2>
 <ul>
-	<li>Elisiane Carla Kobielski</li>
-	<li>Filipe de Freitas</li>
-	<li>Mauro José Vieira Junior</li>
+	<li><a href="https://github.com/CarlaKobielski">Elisiane Carla Kobielski</a></li>
+	<li><a href="https://github.com/Filipedefreitas">Filipe de Freitas</a></li>
+	<li><a href="https://github.com/MauroJoseVieiraJr">Mauro José Vieira Junior</a></li>
 </ul>
 
 <h2>Pré-requisitos</h2>
