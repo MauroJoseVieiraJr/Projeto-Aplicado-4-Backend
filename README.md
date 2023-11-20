@@ -27,40 +27,40 @@ Foram aproveitadas partes do projeto do curso de Desenvolvimento de Sites.</p>
 <h2>Bibliografia</h2>
 <ul>
 	<li>Projeto inicial gerado com a ferramenta Spring Initializr</li>
-	https://start.spring.io/
+	<ul><li>https://start.spring.io/</li></ul>
 	
 	<li>Java 20.0.1</li>
-	https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html
+	<ul><li>https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html</li></ul>
 	
 	<li>PostgreSQL 15.2 (versão acessada em 2023-11-19 é a 15.5)</li>
-	https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+	<ul><li>https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</li></ul>
 	
 	<li><strong>Vídeos tutoriais do professor Julio Cezar Rutke na plataforma AVA Sesi/Senai</strong></li>
 	
 	<li>Criando Aplicação Fullstack do Zero com Java Spring e React - Parte 1: Desenvolvimento do Backend</li>
-	https://www.youtube.com/watch?v=lUVureR5GqI
+	<ul><li>https://www.youtube.com/watch?v=lUVureR5GqI</li></ul>
 	
 	<li>Projeto Web API Java Spring Boot - 2 (Front-end HTML/CSS)</li>
-	https://www.youtube.com/watch?v=Vhc1oAYXqTk
+	<ul><li>https://www.youtube.com/watch?v=Vhc1oAYXqTk</li></ul>
 	
 	<li>Projeto Web API Java Spring Boot - 3 ( Front-end JavaScript)</li>
-	https://www.youtube.com/watch?v=JOzFVnMzcXI
+	<ul><li>https://www.youtube.com/watch?v=JOzFVnMzcXI</li></ul>
 	
 	<li>Projeto Web API Java Spring Boot - 5 (Model e DAO)</li>
-	https://www.youtube.com/watch?v=a_yxI-stMsM
+	<ul><li>https://www.youtube.com/watch?v=a_yxI-stMsM</li></ul>
 	
 	<li>Projeto Web API Java Spring Boot - 6 (Endpoints)</li>
-	https://www.youtube.com/watch?v=ga3Fj47hBLU
+	<ul><li>https://www.youtube.com/watch?v=ga3Fj47hBLU</li></ul>
 	
 	<li>Projeto Web API Java Spring Boot - 7 (Conectando Front/Back)</li>
-	https://www.youtube.com/watch?v=hsewph3Xphw
+	<ul><li>https://www.youtube.com/watch?v=hsewph3Xphw</li></ul>
 	
 	<li>innerHTML with For Loop in Javascript</li>
-	https://stackoverflow.com/questions/12996763/innerhtml-with-for-loop-in-javascript
+	<ul><li>https://stackoverflow.com/questions/12996763/innerhtml-with-for-loop-in-javascript</li></ul>
 	
 	<li>JavaScript | How to Fetch Data from an API</li>
-	https://www.youtube.com/watch?v=zOrejGF0oBA
+	<ul><li>https://www.youtube.com/watch?v=zOrejGF0oBA</li></ul>
 	
 	<li>REST API design - optional request parameters</li>
-	https://stackoverflow.com/questions/61033474/rest-api-design-optional-request-parameters
+	<ul><li>https://stackoverflow.com/questions/61033474/rest-api-design-optional-request-parameters</li></ul>
 </ul>
