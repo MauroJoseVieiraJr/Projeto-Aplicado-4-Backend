@@ -64,9 +64,6 @@ h2{
     text-align: center;
 }
 
-h3{
-
-}
 .textoh4 {
   color: black;
   max-width: 900px; /* Define a largura máxima do container */
@@ -76,7 +73,6 @@ h3{
   background-color: #ffffff; /* Cor de fundo do container (apenas para visualização) */
 }
 footer{
-  font-size;
   position: fixed; /* Faz o rodapé ficar fixo na parte inferior */
   bottom: 0; /* Alinha o rodapé na parte inferior da janela */
   width: 100%; /* Ocupa toda a largura disponível */
@@ -143,8 +139,6 @@ footer{
     background-color: #333; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
 }
-
-
 
 .linha {
     flex: 0 0 calc(33.33% - 20px); /* Define cada campo para ocupar 33.33% da largura, com um pouco de margem */

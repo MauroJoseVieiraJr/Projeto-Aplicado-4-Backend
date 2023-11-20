@@ -34,17 +34,17 @@ public class PersonController {
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@PostMapping("/post")
 	public void post(@RequestBody PersonRequestDTO data) {
-		Person c = new Person(data);
-		repository.save(c);
+		Person p = new Person(data);
+		repository.save(p);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@PutMapping("/put")
 	public void put(@RequestBody PersonRequestDTO data) {
-		Person c = new Person(data);
+		Person p = new Person(data);
 		
 		Person a = repository.getReferenceById(data.id());
-		a.update(c.getName(), c.getSex(), c.getDisability(), c.getTelNumber(), c.getEmail(), c.getPostalCode());
+		a.update(p.getName(), p.getSex(), p.getDisability(), p.getTelNumber(), p.getEmail(), p.getPostalCode());
 				
 		repository.save(a);
 	}
@@ -58,27 +58,27 @@ public class PersonController {
 						@RequestParam(name = "telNumber", required = false) String telNumber,
 						@RequestParam(name = "email", required = false) String email,
 						@RequestParam(name = "postalCode", required = false) String postalCode) {
-		Person c = repository.getReferenceById(id);
+		Person p = repository.getReferenceById(id);
 		
 		if (name != null)
-			c.setName(name);
+			p.setName(name);
 				
 		if (sex != null)
-			c.setSex(sex);
+			p.setSex(sex);
 		
 		if (disability != null)
-			c.setDisability(disability);
+			p.setDisability(disability);
 		
 		if (telNumber != null)
-			c.setTelNumber(telNumber);
+			p.setTelNumber(telNumber);
 		
 		if (email != null)
-			c.setEmail(email);
+			p.setEmail(email);
 		
 		if (postalCode != null)
-			c.setPostalCode(postalCode);
+			p.setPostalCode(postalCode);
 
-		repository.save(c);
+		repository.save(p);
 	}
 	
 	@DeleteMapping("/delete")
@@ -97,10 +97,10 @@ public class PersonController {
 	@GetMapping("/getbyid")
 	public ResponseEntity<Person> getById(@RequestParam(name = "id", required = true) long id) {
 		try {
-			Optional<Person> c = repository.findById(id);
+			Optional<Person> p = repository.findById(id);
 			
-			if (Optional.ofNullable(c).isPresent())
-				return new ResponseEntity<Person>(c.get(), HttpStatus.OK);
+			if (Optional.ofNullable(p).isPresent())
+				return new ResponseEntity<Person>(p.get(), HttpStatus.OK);
 			else
 				return new ResponseEntity<Person>(new Person(), HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
@@ -110,7 +110,7 @@ public class PersonController {
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping("/getbyparam")
-	public ResponseEntity<List<Person>> getByParam(	@RequestParam(name = "name", required = false) String name,
+	public ResponseEntity<List<Person>> getByParam(		@RequestParam(name = "name", required = false) String name,
 														@RequestParam(name = "sex", required = false) String sex,
 														@RequestParam(name = "disability", required = false) String disability,
 														@RequestParam(name = "telNumber", required = false) String telNumber,
@@ -118,20 +118,20 @@ public class PersonController {
 														@RequestParam(name = "postalCode", required = false) String postalCode) {
 		// A busca aqui tem que ser EXATA
 		try {
-			List<Person> cName = repository.findCandidateByName(name);
-			List<Person> cSex = repository.findCandidateByEmail(sex);
-			List<Person> cDisability = repository.findCandidateByEmail(disability);
-			List<Person> cTelNumber = repository.findCandidateByEmail(telNumber);
-			List<Person> cEmail = repository.findCandidateByEmail(email);
-			List<Person> cPostalCode = repository.findCandidateByPostalCode(postalCode);
+			List<Person> pName = repository.findCandidateByName(name);
+			List<Person> pSex = repository.findCandidateByEmail(sex);
+			List<Person> pDisability = repository.findCandidateByEmail(disability);
+			List<Person> pTelNumber = repository.findCandidateByEmail(telNumber);
+			List<Person> pEmail = repository.findCandidateByEmail(email);
+			List<Person> pPostalCode = repository.findCandidateByPostalCode(postalCode);
 			List<Person> result = new ArrayList<Person>();
 			
-			result.addAll(cName);
-			result.addAll(cSex);
-			result.addAll(cDisability);
-			result.addAll(cTelNumber);
-			result.addAll(cEmail);
-			result.addAll(cPostalCode);
+			result.addAll(pName);
+			result.addAll(pSex);
+			result.addAll(pDisability);
+			result.addAll(pTelNumber);
+			result.addAll(pEmail);
+			result.addAll(pPostalCode);
 			
 			if (!result.isEmpty())
 				return new ResponseEntity<List<Person>>(result, HttpStatus.OK);

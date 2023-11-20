@@ -1,0 +1,13 @@
+package com.senai.sc.ProjetoAplicado3.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.senai.sc.ProjetoAplicado3.entity.Necessity;
+
+public interface NecessityRepository extends JpaRepository<Necessity, Long> {
+	List<Necessity> findCandidateByDisability(String disability);
+	List<Necessity> findCandidateByDescription(String description);
+	List<Necessity> findCandidateByPostalCode(String postalCode);
+}

@@ -1,6 +1,6 @@
 package com.senai.sc.ProjetoAplicado3.entity;
 
-import com.senai.sc.ProjetoAplicado3.dto.request.PersonRequestDTO;
+import com.senai.sc.ProjetoAplicado3.dto.request.NecessityRequestDTO;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -24,36 +24,58 @@ public class Necessity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id") 
 	private Long id;
-	@Column(name = "name", columnDefinition = "varchar(255) not null")
-	private String name;
-	@Column(name = "sex", columnDefinition = "varchar(255) not null")
-	private String sex;
 	@Column(name = "disability", columnDefinition = "varchar(255) not null")
 	private String disability;
-	@Column(name = "tel_number", columnDefinition = "varchar(255) not null")
-	private String telNumber;
-	@Column(name = "email", columnDefinition = "varchar(255) not null")
-	private String email;
+	@Column(name = "description", columnDefinition = "varchar(255) not null")
+	private String description;
 	@Column(name = "postal_code", columnDefinition = "varchar(255) not null")
 	private String postalCode;
 	
 	public Necessity() {}
 	
-	public Necessity(PersonRequestDTO c) {
-		this.name = c.name();
-		this.sex = c.sex();
-		this.disability = c.disability();
-		this.telNumber = c.telNumber();
-		this.email = c.email();
-		this.postalCode = c.postalCode();
+	public Necessity(NecessityRequestDTO n) {
+		this.disability = n.disability();
+		this.description = n.description();
+		this.postalCode = n.postalCode();
 	}
 	
-	public void update(String name, String sex, String disability, String telNumber, String email, String postalCode) {
-		this.name = name;
-		this.sex = sex;
+	public void update(String disability, String description, String postalCode) {
 		this.disability = disability;
-		this.telNumber = telNumber;
-		this.email = email;
+		this.description = description;
 		this.postalCode = postalCode;
 	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getDisability() {
+		return disability;
+	}
+
+	public void setDisability(String disability) {
+		this.disability = disability;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getPostalCode() {
+		return postalCode;
+	}
+
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
+	
+	
 }
