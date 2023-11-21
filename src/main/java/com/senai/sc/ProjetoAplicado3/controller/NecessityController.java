@@ -32,14 +32,14 @@ public class NecessityController {
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PostMapping("/post")
+	@PostMapping("/")
 	public void post(@RequestBody NecessityRequestDTO data) {
 		Necessity n = new Necessity(data);
 		repository.save(n);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PutMapping("/put")
+	@PutMapping("/")
 	public void put(@RequestBody NecessityRequestDTO data) {
 		Necessity n = new Necessity(data);
 		
@@ -50,7 +50,7 @@ public class NecessityController {
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PatchMapping("/patch")
+	@PatchMapping("/")
 	public void patch(	@RequestParam(name = "id", required = true) long id,
 						@RequestParam(name = "disability", required = false) String disability,
 						@RequestParam(name = "description", required = false) String description,
@@ -69,13 +69,13 @@ public class NecessityController {
 		repository.save(n);
 	}
 	
-	@DeleteMapping("/delete")
+	@DeleteMapping("/")
 	public void delete(@RequestParam("id") long id) {	
 		repository.deleteById(id);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@GetMapping("/get")
+	@GetMapping("/")
 	public List<NecessityResponseDTO> get() {
 		List<NecessityResponseDTO> candidateList = repository.findAll().stream().map(NecessityResponseDTO::new).toList();
 		return candidateList;

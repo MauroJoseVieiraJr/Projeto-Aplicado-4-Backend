@@ -7,46 +7,122 @@
   <title>PC2D - Programa de Cadastro de Pessoas com Deficiência</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript">
-    function enviarCadastro() {
+    function enviarCadastroPessoa() {
     // Lógica para enviar o cadastro
     // Aqui você pode adicionar código para processar o envio do formulário de cadastro
     // Por exemplo, utilizando AJAX para enviar os dados para um servidor
-    const candName = document.querySelector("#Nome");
-    const candSex = document.querySelector("#Sexo");
-    const candDef = document.querySelector("#Deficiencia");
-    const candCel = document.querySelector("#Telefone");
-    const candEmail = document.querySelector("#email");
-    const candCep = document.querySelector("#Endereço");
-  
-    fetch("http://localhost:8080/ProjetoAplicado3/person/",
-    {
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      },
-      method: "POST",
-      body: JSON.stringify({
-        name: candName.value,
-        sex: candSex.value,
-        disability: candDef.value,
-        telNumber: candCel.value,
-        email: candEmail.value,
-        postalCode: candCep.value
-      })
-    }
-    )
-    .then(function (response) {console.log(response)})
-    .catch(function (response) {console.log(response)})
-  
-    // Limpa os campos de entrada
-    candName.value = "";
-    candSex.value = "";
-    candDef.value = "";
-    candCel.value = "";
-    candEmail.value = "";
-    candCep.value = "";
+    const pName = document.querySelector("#Nome");
+    const pSex = document.querySelector("#Sexo");
+    const pDef = document.querySelector("#Deficiencia");
+    const pCel = document.querySelector("#Telefone");
+    const pEmail = document.querySelector("#email");
+    const pCep = document.querySelector("#Endereço");
 
-    alert("Cadastro bem-sucedido!");
+    if (pName.value !== "" &&
+        pSex.value !== "" &&
+        pDef.value !== "" &&
+        pCel.value !== "" &&
+        pEmail.value !== "" &&
+        pCep.value !== "" ) {      
+          fetch("http://localhost:8080/ProjetoAplicado3/person/",
+          {
+            headers: {
+              "Accept": "application/json",
+              "Content-Type": "application/json"
+            },
+            method: "POST",
+            body: JSON.stringify({
+              name: pName.value,
+              sex: pSex.value,
+              disability: pDef.value,
+              telNumber: pCel.value,
+              email: pEmail.value,
+              postalCode: pCep.value
+            })
+          }
+          )
+          .then(function (response) {console.log(response)})
+          .catch(function (response) {console.log(response)})
+        
+          // Limpa os campos de entrada
+          pName.value = "";
+          pSex.value = "";
+          pDef.value = "";
+          pCel.value = "";
+          pEmail.value = "";
+          pCep.value = "";
+    }
+  
+  }
+
+  function enviarCadastroNecessidade() {
+    // Lógica para enviar o cadastro
+    // Aqui você pode adicionar código para processar o envio do formulário de cadastro
+    // Por exemplo, utilizando AJAX para enviar os dados para um servidor
+    const nDescription = document.querySelector("#Necessidade");
+    const nDef = document.querySelector("#DeficienciaNecessidade");
+    const nCep = document.querySelector("#EndereçoNecessidade");
+
+    if (nDescription.value !== "" &&
+        nDef.value !== "" &&
+        nCep.value !== "" ) {  
+      fetch("http://localhost:8080/ProjetoAplicado3/necessity/",
+      {
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify({
+          description: nDescription.value,
+          disability: nDef.value,
+          postalCode: nCep.value
+        })
+      }
+      )
+      .then(function (response) {console.log(response)})
+      .catch(function (response) {console.log(response)})
+    
+      // Limpa os campos de entrada
+      nDescription.value = "";
+      nDef.value = "";
+      nCep.value = "";
+    }
+  }
+
+  function enviarCadastroAdequacao() {
+    // Lógica para enviar o cadastro
+    // Aqui você pode adicionar código para processar o envio do formulário de cadastro
+    // Por exemplo, utilizando AJAX para enviar os dados para um servidor
+    const aDef = document.querySelector("#DeficienciaAdequacao");
+    const aType = document.querySelector("#TipoAdequacao");
+    const aCep = document.querySelector("#EndereçoAdequacao");
+
+    if (aDef.value !== "" &&
+        aType.value !== "" &&
+        aCep.value !== "" ) {
+        }
+        fetch("http://localhost:8080/ProjetoAplicado3/adequacy/",
+        {
+          headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          method: "POST",
+          body: JSON.stringify({
+            disability: aDef.value,
+            type: aType.value,
+            postalCode: aCep.value
+          })
+        }
+        )
+        .then(function (response) {console.log(response)})
+        .catch(function (response) {console.log(response)})
+      
+        // Limpa os campos de entrada
+        aDef.value = "";
+        aType.value = "";
+        aCep.value = "";
   }
   </script>
 </head>
@@ -60,7 +136,6 @@
   </nav>
   <main>
     <h7>Bem vindo a pagina de cadastro, por favor preencha os campos abaixo com os seus dados:<br><br></h7>
-    <!--FICAR ESPERTO AQUI-->
     <form method="POST" class="form-cadastro">
         <div class="linha">
             <label for="Nome">Nome:</label>
@@ -86,7 +161,41 @@
             <label for="Endereço">Endereço:</label>
             <input type="text" id="Endereço" name="Endereço" required>
         </div>
-        <button type='button' onclick="enviarCadastro()">Cadastrar</button>
+        <input type='submit' value="Cadastrar" onclick="enviarCadastroPessoa()">
+    </form>
+
+    <h7>Cadastro de necessidades especiais em conformidade com deficiências<br><br></h7>
+    <form method="POST" class="form-cadastro">
+        <div class="linha">
+            <label for="Necessidade">Necessidade:</label>
+            <input type="text" id="Necessidade" name="Necessidade" required>
+        </div>
+        <div class="linha">
+            <label for="Deficiencia">Tipo de deficiência:</label>
+            <input type="text" id="DeficienciaNecessidade" name="Deficiencia" required>
+        </div>
+        <div class="linha">
+            <label for="Endereço">Endereço:</label>
+            <input type="text" id="EndereçoNecessidade" name="Endereço" required>
+        </div>
+        <input type='submit' value="Cadastrar" onclick="enviarCadastroNecessidade()">
+    </form>
+
+    <h7>Cadastro de adequações em conformidade com deficiências<br><br></h7>
+    <form method="POST" class="form-cadastro">
+        <div class="linha">
+            <label for="TipoAdequacao">Tipo de Adequação:</label>
+            <input type="text" id="TipoAdequacao" name="Adequacao" required>
+        </div>
+        <div class="linha">
+            <label for="Deficiencia">Tipo de deficiência:</label>
+            <input type="text" id="DeficienciaAdequacao" name="Deficiencia" required>
+        </div>
+        <div class="linha">
+            <label for="Endereço">Endereço:</label>
+            <input type="text" id="EndereçoAdequacao" name="Endereço" required>
+        </div>
+        <input type='submit' value="Cadastrar" onclick="enviarCadastroAdequacao()">
     </form>
 </main>
   <footer>
@@ -100,7 +209,7 @@
     </div>
   <div class="links">
     <a href="faq.html">FAQ</a>
-    <a href="#">Saiba Mais</a>
+    <a href="Saibamais.html">Saiba Mais</a>
   </div>
   </footer>
 </body>

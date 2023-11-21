@@ -32,14 +32,14 @@ public class AdequacyController {
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PostMapping("/post")
+	@PostMapping("/")
 	public void post(@RequestBody AdequacyRequestDTO data) {
 		Adequacy a = new Adequacy(data);
 		repository.save(a);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PutMapping("/put")
+	@PutMapping("/")
 	public void put(@RequestBody AdequacyRequestDTO data) {
 		Adequacy a = new Adequacy(data);
 		
@@ -50,7 +50,7 @@ public class AdequacyController {
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PatchMapping("/patch")
+	@PatchMapping("/")
 	public void patch(	@RequestParam(name = "id", required = true) long id,
 						@RequestParam(name = "disability", required = false) String disability,
 						@RequestParam(name = "type", required = false) String type,
@@ -69,13 +69,13 @@ public class AdequacyController {
 		repository.save(a);
 	}
 	
-	@DeleteMapping("/delete")
+	@DeleteMapping("/")
 	public void delete(@RequestParam("id") long id) {	
 		repository.deleteById(id);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@GetMapping("/get")
+	@GetMapping("/")
 	public List<AdequacyResponseDTO> get() {
 		List<AdequacyResponseDTO> candidateList = repository.findAll().stream().map(AdequacyResponseDTO::new).toList();
 		return candidateList;
