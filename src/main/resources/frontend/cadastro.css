@@ -9,35 +9,39 @@ header{
     padding: 5px; 
 }
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #fff;
-  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 h1{
+  position: absolute;
+  bottom: 75%;
+  margin-left: 10%;
   color:rgb(12, 106, 138);
   text-align: left;
   font-size: 30px;
+  
 }
-.cadeirante{
-    width: 30%; /* Ajusta a largura da imagem para 100% do elemento pai */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Faz com que a imagem seja exibida como um bloco */
-    margin:auto;
-    
+
+.h22 {
+    display: grid;
 }
+.h33 {
+    display: grid;
+    margin-left: 50px;
+}
+
+.caixas {
+ display: flex;
+
+}
+
 main{
-  background-color: #ffffff; /* Define uma cor de fundo mais escura para a área central */
-  color: rgb(84, 97, 107); /* Define a cor do texto dentro da área central como branco */
-  padding: 0px; /* Adiciona um espaçamento interno para o conteúdo */
-  width: auto;
-  font-style: italic;
-  font-size: larger;
-  margin-top: 100px;
-  text-align: left;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+  
 }
 .menu a {
     background-color: rgb(12, 106, 138);
@@ -131,11 +135,7 @@ footer{
     font-family: 'Poppins', sans-serif;
   }
 
-.caixas {
- display: flex;
- align-items: self-end;
 
-}
 .form-cadastro input[type="submit"] {
     border-radius: 5px; /* Define a curvatura das bordas */
     padding: 10px 20px; /* Ajusta o preenchimento do botão */
