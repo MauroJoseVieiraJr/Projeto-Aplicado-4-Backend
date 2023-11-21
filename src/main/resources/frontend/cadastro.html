@@ -6,6 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PC2D - Programa de Cadastro de Pessoas com Deficiência</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+    function enviarCadastro() {
+    // Lógica para enviar o cadastro
+    // Aqui você pode adicionar código para processar o envio do formulário de cadastro
+    // Por exemplo, utilizando AJAX para enviar os dados para um servidor
+    const candName = document.querySelector("#Nome");
+    const candSex = document.querySelector("#Sexo");
+    const candDef = document.querySelector("#Deficiencia");
+    const candCel = document.querySelector("#Telefone");
+    const candEmail = document.querySelector("#email");
+    const candCep = document.querySelector("#Endereço");
+  
+    fetch("http://localhost:8080/ProjetoAplicado3/person/",
+    {
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      method: "POST",
+      body: JSON.stringify({
+        name: candName.value,
+        sex: candSex.value,
+        disability: candDef.value,
+        telNumber: candCel.value,
+        email: candEmail.value,
+        postalCode: candCep.value
+      })
+    }
+    )
+    .then(function (response) {console.log(response)})
+    .catch(function (response) {console.log(response)})
+  
+    // Limpa os campos de entrada
+    candName.value = "";
+    candSex.value = "";
+    candDef.value = "";
+    candCel.value = "";
+    candEmail.value = "";
+    candCep.value = "";
+
+    alert("Cadastro bem-sucedido!");
+  }
+  </script>
 </head>
 <body>
   <nav>
@@ -18,26 +61,22 @@
   <main>
     <h7>Bem vindo a pagina de cadastro, por favor preencha os campos abaixo com os seus dados:<br><br></h7>
     <!--FICAR ESPERTO AQUI-->
-    <form action="processar_cadastro.php" method="POST" class="form-cadastro">
+    <form method="POST" class="form-cadastro">
         <div class="linha">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <label for="Nome">Nome:</label>
+            <input type="text" id="Nome" name="Nome" required>
         </div>
         <div class="linha">
-          <label for="sexo">Sexo:</label>
-          <input type="text" id="sexo" name="sexo" required>
+          <label for="Sexo">Sexo:</label>
+          <input type="text" id="Sexo" name="Sexo" required>
       </div>
         <div class="linha">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
         </div>
         <div class="linha">
-            <label for="CPF">CPF:</label>
-            <input type="text" id="CPF" name="CPF" required>
-        </div>
-        <div class="linha">
-            <label for="DEF">Tipo de deficiência:</label>
-            <input type="text" id="DEF" name="DEF" required>
+            <label for="Deficiencia">Tipo de deficiência:</label>
+            <input type="text" id="Deficiencia" name="Deficiencia" required>
         </div>
         <div class="linha">
             <label for="Telefone">Telefone:</label>
@@ -45,9 +84,9 @@
         </div>
         <div class="linha">
             <label for="Endereço">Endereço:</label>
-            <input type="text" id="END" name="Endereço" required>
+            <input type="text" id="Endereço" name="Endereço" required>
         </div>
-        <input type="submit" value="Cadastrar">
+        <button type='button' onclick="enviarCadastro()">Cadastrar</button>
     </form>
 </main>
   <footer>

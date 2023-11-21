@@ -9,10 +9,10 @@ import com.senai.sc.ProjetoAplicado3.entity.Person;
 
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Long> {
-	List<Person> findCandidateByName(String name);
-	List<Person> findCandidateBySex(String sex);
-	List<Person> findCandidateByDisability(String disability);
-	List<Person> findCandidateByTelNumber(String telNumber);
-	List<Person> findCandidateByEmail(String email);
-	List<Person> findCandidateByPostalCode(String postalCode);
+	List<Person> findPersonByName(String name);
+	List<Person> findPersonBySex(String sex);
+	List<Person> findPersonByDisability(String disability);
+	List<Person> findPersonByTelNumber(String telNumber);
+	List<Person> findPersonByEmail(String email);
+	List<Person> findPersonByPostalCode(String postalCode);
 }

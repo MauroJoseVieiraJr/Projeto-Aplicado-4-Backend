@@ -32,14 +32,14 @@ public class PersonController {
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PostMapping("/post")
+	@PostMapping("/")
 	public void post(@RequestBody PersonRequestDTO data) {
 		Person p = new Person(data);
 		repository.save(p);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PutMapping("/put")
+	@PutMapping("/")
 	public void put(@RequestBody PersonRequestDTO data) {
 		Person p = new Person(data);
 		
@@ -50,7 +50,7 @@ public class PersonController {
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@PatchMapping("/patch")
+	@PatchMapping("/")
 	public void patch(	@RequestParam(name = "id", required = true) long id,
 						@RequestParam(name = "name", required = false) String name,
 						@RequestParam(name = "sex", required = false) String sex,
@@ -81,13 +81,13 @@ public class PersonController {
 		repository.save(p);
 	}
 	
-	@DeleteMapping("/delete")
+	@DeleteMapping("/")
 	public void delete(@RequestParam("id") long id) {	
 		repository.deleteById(id);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@GetMapping("/get")
+	@GetMapping("/")
 	public List<PersonResponseDTO> get() {
 		List<PersonResponseDTO> candidateList = repository.findAll().stream().map(PersonResponseDTO::new).toList();
 		return candidateList;
@@ -118,12 +118,12 @@ public class PersonController {
 														@RequestParam(name = "postalCode", required = false) String postalCode) {
 		// A busca aqui tem que ser EXATA
 		try {
-			List<Person> pName = repository.findCandidateByName(name);
-			List<Person> pSex = repository.findCandidateByEmail(sex);
-			List<Person> pDisability = repository.findCandidateByEmail(disability);
-			List<Person> pTelNumber = repository.findCandidateByEmail(telNumber);
-			List<Person> pEmail = repository.findCandidateByEmail(email);
-			List<Person> pPostalCode = repository.findCandidateByPostalCode(postalCode);
+			List<Person> pName = repository.findPersonByName(name);
+			List<Person> pSex = repository.findPersonByEmail(sex);
+			List<Person> pDisability = repository.findPersonByEmail(disability);
+			List<Person> pTelNumber = repository.findPersonByEmail(telNumber);
+			List<Person> pEmail = repository.findPersonByEmail(email);
+			List<Person> pPostalCode = repository.findPersonByPostalCode(postalCode);
 			List<Person> result = new ArrayList<Person>();
 			
 			result.addAll(pName);

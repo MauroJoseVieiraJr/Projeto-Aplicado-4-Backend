@@ -103,9 +103,9 @@ public class NecessityController {
 														@RequestParam(name = "postalCode", required = false) String postalCode) {
 		// A busca aqui tem que ser EXATA
 		try {
-			List<Necessity> cDisability = repository.findCandidateByDisability(disability);
-			List<Necessity> cDescription = repository.findCandidateByDescription(description);
-			List<Necessity> cPostalCode = repository.findCandidateByPostalCode(postalCode);
+			List<Necessity> cDisability = repository.findNecessityByDisability(disability);
+			List<Necessity> cDescription = repository.findNecessityByDescription(description);
+			List<Necessity> cPostalCode = repository.findNecessityByPostalCode(postalCode);
 			List<Necessity> result = new ArrayList<Necessity>();
 			
 			result.addAll(cDisability);
