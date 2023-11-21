@@ -8,16 +8,26 @@ header{
     border: 10px solid rgb(116, 116, 173);
     padding: 5px; 
 }
-body, html {
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  color:rgb(12, 106, 138);
+  text-align: left;
+  font-size: 30px;
 }
 .cadeirante{
     width: 30%; /* Ajusta a largura da imagem para 100% do elemento pai */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Faz com que a imagem seja exibida como um bloco */
     margin:auto;
+    
 }
 main{
   background-color: #ffffff; /* Define uma cor de fundo mais escura para a área central */
@@ -27,8 +37,7 @@ main{
   font-style: italic;
   font-size: larger;
   margin-top: 100px;
-  text-align: center;
-
+  text-align: left;
 }
 .menu a {
     background-color: rgb(12, 106, 138);
@@ -37,7 +46,6 @@ main{
     color:white;
     
 }
-
 .menu {
     position: fixed;
     top: 0;
@@ -57,10 +65,7 @@ main{
     border-color: blue; /* Altera a cor da borda ao passar o mouse*/
     text-decoration: none;
 }
-h1{
-    color:rgb(12, 106, 138);
-    text-align: center;
-}
+
 h2{
     color:rgb(12, 106, 138);
     text-align: center;
@@ -91,14 +96,17 @@ footer{
 
 /* Estilo para a área de contato */
 .contato {
-    text-align: left; /* Alinha os itens à direita */
-    font-weight: bold;
+  text-align: left; /* Alinha os itens à direita */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+    
   }
 .infocontato p{
-    display: inline; /* Faz os elementos ficarem na mesma linha */
-    margin: 0; /* Remove margens dos parágrafos para melhor alinhamento */
-    margin-bottom: 8px;
-    margin-right: 50px;
+  display: inline; /* Faz os elementos ficarem na mesma linha */
+  margin: 0; /* Remove margens dos parágrafos para melhor alinhamento */
+  margin-bottom: 8px;
+  margin-right: 50px;
+  font-family: 'Poppins', sans-serif;
   }
   .links{
     display: flex;
@@ -113,27 +121,16 @@ footer{
   
   /* Estilo para os links */
   .links a {
+    text-align: center;
     margin-right: 10px;
     color: white;
     text-decoration: none;
     margin-top: 50px;
     margin-left: 20px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
   }
 
-  .form-cadastro {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.form-cadastro input[type="text"],
-.form-cadastro input[type="email"],
-.form-cadastro input[type="number"],
-.form-cadastro input[type="password"] {
-    border-radius: 5px; /* Define a curvatura das bordas */
-    padding: 8px; /* Adiciona um espaço interno para o texto não ficar muito próximo das bordas */
-    border: 1px solid #ccc; /* Adiciona uma borda para destacar as caixas */
-}
 
 .form-cadastro input[type="submit"] {
     border-radius: 5px; /* Define a curvatura das bordas */
@@ -160,12 +157,6 @@ label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
 }
-.caixalogin {
-    
-}
-.login {
-    
-    
-}
+
 
 
