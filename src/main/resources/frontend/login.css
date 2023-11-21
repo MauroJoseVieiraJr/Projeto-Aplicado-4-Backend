@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2? family-Poppins:wght@300;400;500;600;700;800;900& display=swap");
+
+.menu a {
+    background-color: rgb(12, 106, 138);
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    background-color: rgb(12, 106, 138);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    z-index: 999; /* Garante que a barra de menu fique acima do restante do conteúdo */
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu a:hover{
+    background-color: rgb(20, 20, 75);/*Altera a cor de fundo do botao ao passar o mouse*/
+    color:white; /*Altera a cor do texto ao passar o mouse*/
+    border-color: blue; /* Altera a cor da borda ao passar o mouse*/
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+  
+footer{
+    position: fixed; /* Faz o rodapé ficar fixo na parte inferior */
+    bottom: 0; /* Alinha o rodapé na parte inferior da janela */
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 10vh; /* Ocupa 10% da altura da janela */
+    background-color: rgb(12, 106, 138); /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    display: flex;
+    justify-content: space-between;/* Distribui os itens igualmente ao longo do eixo principal */
+    align-items: center;/*Alinha os itens verticalmente*/
+    padding: 50px;
+    box-sizing: border-box; /* Inclui padding na largura e altura */
+    z-index: 9999; /* Ajusta o z-index para garantir que o rodapé fique na camada superior */
+    
+  }
+  
+  /* Estilo para a área de contato */
+  .contato {
+      text-align: left; /* Alinha os itens à direita */
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+    }
+  .infocontato p{
+      display: inline; /* Faz os elementos ficarem na mesma linha */
+      margin: 0; /* Remove margens dos parágrafos para melhor alinhamento */
+      margin-bottom: 8px;
+      margin-right: 50px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .links{
+      display: flex;
+    }
+    .links a {
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+        margin-top: 50px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+      }

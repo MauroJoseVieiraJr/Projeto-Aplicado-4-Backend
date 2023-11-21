@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>NOME super legal aqui!</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="login.css" rel="stylesheet" type="text/css">
 </head>
 <body>
  
@@ -14,21 +20,29 @@
     </div>
   </nav>
   <main>
-    <div class="caixalogin"
-    <h7>Por favor preencha os campos abaixo com seu login e senha:<br><br></h7>
+    <div class="caixalogin">
+       <h7>Login:<br><br></h7>
     <form action="login.php" method="POST" class="form-cadastro">
         <div class="login">
             <label for="Login">Login:</label>
             <input type="login" id="login" name="login" required>
+            <i class='bx bxs-user'></i>
         </div>
         <div class="login">
             <label for="Senha">Senha:</label>
             <input type="senha" id="senha" name="senha" required>
+            <i class='bx bxs-lock-open-alt'></i>
         </div>
-        <div class="cadastrar">
-        <input type="submit" value="Cadastrar">
+        <div class="esqueci-a-senha">
+        <label><input type="checkbox"> Lembrar de mim</label>
+        <a href="#">Esqueceu a senha?</a>
         </div>
+        <input type="submit" value="Login">        
         </div>
+        <div class="registri-se">
+          <p>Não tem uma conta ainda?<a href="#"></a></p>
+        </div>
+
     </form>
 </main>
 
