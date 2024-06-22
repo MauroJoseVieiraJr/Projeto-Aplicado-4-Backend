@@ -1,10 +1,10 @@
-package com.senai.sc.ProjetoAplicado3.repository;
+package com.senai.sc.ProjetoAplicado4.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.senai.sc.ProjetoAplicado3.entity.Adequacy;
+import com.senai.sc.ProjetoAplicado4.entity.Adequacy;
 
 public interface AdequacyRepository extends JpaRepository<Adequacy, Long> {
 	List<Adequacy> findAdequacyByDisability(String disability);

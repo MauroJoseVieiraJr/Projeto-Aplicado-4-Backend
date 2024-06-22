@@ -1,4 +1,4 @@
-package com.senai.sc.ProjetoAplicado3.controller;
+package com.senai.sc.ProjetoAplicado4.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.senai.sc.ProjetoAplicado3.dto.request.NecessityRequestDTO;
-import com.senai.sc.ProjetoAplicado3.dto.response.NecessityResponseDTO;
-import com.senai.sc.ProjetoAplicado3.entity.Necessity;
-import com.senai.sc.ProjetoAplicado3.repository.NecessityRepository;
+import com.senai.sc.ProjetoAplicado4.repository.NecessityRepository;
+import com.senai.sc.ProjetoAplicado4.dto.request.NecessityRequestDTO;
+import com.senai.sc.ProjetoAplicado4.dto.response.NecessityResponseDTO;
+import com.senai.sc.ProjetoAplicado4.entity.Necessity;
 
 @RestController
 @RequestMapping("ProjetoAplicado3/necessity")

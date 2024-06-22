@@ -1,6 +1,6 @@
-package com.senai.sc.ProjetoAplicado3.entity;
+package com.senai.sc.ProjetoAplicado4.entity;
 
-import com.senai.sc.ProjetoAplicado3.dto.request.AdequacyRequestDTO;
+import com.senai.sc.ProjetoAplicado4.dto.request.AdequacyRequestDTO;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

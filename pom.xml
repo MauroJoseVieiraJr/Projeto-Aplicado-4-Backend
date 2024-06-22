@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.senai.sc</groupId>
-	<artifactId>ProjetoAplicado3</artifactId>
+	<artifactId>ProjetoAplicado4Backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ProjetoAplicado3</name>
-	<description>Projeto Aplicado 3 para o curso de Análise e Desenvolvimento de Sistemas do UniSenai/SC - Câmpus Florianópolis</description>
+	<name>ProjetoAplicado4Backend</name>
+	<description>Backend do Projeto Aplicado 4 para o curso de Análise e Desenvolvimento de Sistemas do UniSenai/SC - Câmpus Florianópolis</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

@@ -1,6 +1,6 @@
-package com.senai.sc.ProjetoAplicado3.dto.response;
+package com.senai.sc.ProjetoAplicado4.dto.response;
 
-import com.senai.sc.ProjetoAplicado3.entity.Adequacy;
+import com.senai.sc.ProjetoAplicado4.entity.Adequacy;
 
 public record AdequacyResponseDTO(Long id, String disability, String type, String postalCode) {
 	public AdequacyResponseDTO(Adequacy a) {

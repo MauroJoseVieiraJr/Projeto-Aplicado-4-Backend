@@ -1,6 +1,6 @@
-package com.senai.sc.ProjetoAplicado3.dto.response;
+package com.senai.sc.ProjetoAplicado4.dto.response;
 
-import com.senai.sc.ProjetoAplicado3.entity.Person;
+import com.senai.sc.ProjetoAplicado4.entity.Person;
 
 public record PersonResponseDTO(Long id, String name, String sex, String disability, String telNumber, String email, String postalCode) {
 	public PersonResponseDTO (Person c) {
